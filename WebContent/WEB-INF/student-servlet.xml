@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Το όνομα αυτού του xml αρχείου πρέπει να είναι αντίστοιχο με 
+αυτό που έχει δηλωθεί στο web.xml  [student]-servlet.xml σε αυτή την περίπτωση -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+
+	<context:component-scan base-package="hua.student">
+	</context:component-scan>
+	<context:annotation-config></context:annotation-config>
+	<bean id="internalResourceViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<property name="prefix" value="/WEB-INF/jsps/"></property>
+	<property name="suffix" value=".jsp"></property>  <!-- Κόλπο για να μην εμφανίζεται ή κατάληξη της σελίδας
+	μας (jsp). Νομίζω ένας καλός attacker θα βρει τρόπο να μάθει τι εχουμε χρησιμοποιήσει στο backend   -->
+	
+	</bean>
+</beans>
