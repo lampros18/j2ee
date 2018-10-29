@@ -4,13 +4,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Φοιτητής</title>
 </head>
 <body>
 
-	<div>Καλησπέρα από το αμφιθέατρο</div>
+	<a href="${pageContext.request.contextPath}/">Home</a>
 	<br />
+	<br/>
 
 
 	<table>

@@ -8,6 +8,8 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>WebContent/WEB-INF/student-servlet.xml</config>
+		<config>src/hua/beans/beans.xml</config>
+		<config>src/hua/beans/student-dao-context.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
